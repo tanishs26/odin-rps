@@ -35,7 +35,12 @@ function playRound(playerSelection, computerSelection) {
         default:
             return "Invalid choice"
     }
+}
+function playGame() {
+    for (i = 0; i < 5; i++) {
+        alert(playRound(prompt("Enter your choice").toLowerCase(), getComputerChoice()));
 
+    }
 
 }
-alert(playRound(prompt("Enter your choice").toLowerCase(), getComputerChoice()));
+playGame()
